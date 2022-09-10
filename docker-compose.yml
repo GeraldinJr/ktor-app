@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  postgres_company:
+    container_name: postgres_company
+    image: postgres:12.2
+    environment:
+      POSTGRES_DB: "ktor-app"
+      POSTGRES_USER: "ktor-app"
+      POSTGRES_PASSWORD: "ktor-app"
+      TZ: UTC
+    ports:
+      - "5432:5432"
